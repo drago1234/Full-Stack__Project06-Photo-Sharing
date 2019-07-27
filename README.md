@@ -11,8 +11,8 @@
 #### Environment setup
 ```ruby
 $ bundle update 
-$ bundle install
-$ rails s
+$ bundle install --> an ruby library management tool to update and install the required gems(lib)
+$ rails s --> open the application in the local server
 ```
 
 #### Create an account
@@ -55,7 +55,11 @@ The orginial idea was derived from the 500 px website, a photo sharing website f
 ### Contributions: 
 
 * Pranay Byreddy: Implemented form partial for comments. Implemented controller, view for comments, added validations, fixed rediretion issues. Added front end design using bootstrap for homepage.
-* Zhengqi Dong: implemeted the View for layout (includes header/footer partials, and the stylesheet in custom.css), wrote and tested the routes for welcome, worte and test the model and controller for users.
+* Zhengqi Dong: 
+   - Implemeted the View for layout (located in layout _header.html.erb, _footer.html.erb, _head.html.erb, application.html.erb, in 'view/layout/')
+   - Implemented the users model and controller(Created in controllers/user_controller.rb, models/user.rb), and add the validation checking for username, email, password confirmation, and produce pretty warning messages.
+   - Added stylesheet for the front page with bootstrap (locates in ./assets/stylesheets/custom.css.scss)
+   - Wrote and did the integration test of the routes for welcome, and the model and controller for users.
 * Trevor Shirey: Implemented Like MVC using general implementation. 
 * Yi Zhao: 
    - Implemented Devise User MVC. (Email verification, adding profile to user, adding customized column on User. Adding association with like, post, follow and corresponding helper functions. Adding all views into '/views/users' to make front end looks nice and clean.)
@@ -65,5 +69,3 @@ The orginial idea was derived from the 500 px website, a photo sharing website f
    - Modified Comment MVC. (Associate comments with user, add verifications on delete button, change views (locates in "/views/posts/show") to make it looks nice.)
    - Adding Stylesheets to all views written to make it looks nice.
 
-
-# Full-Stack__Project06-Photo-Sharing
