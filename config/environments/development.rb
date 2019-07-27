@@ -8,7 +8,7 @@ Rails.application.configure do
 
   # Do not eager load code on boot.
   config.eager_load = false
-  
+
   # config paperclip path
   Paperclip.options[:command_path] = "/usr/local/bin/"
   # config gmail server
@@ -17,8 +17,10 @@ Rails.application.configure do
   config.action_mailer.default_url_options =  { host: 'localhost:3000' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    user_name:      'zhaoyi5914@gmail.com',
-    password:       'woxihuanni!',
+    user_name:      'buckeyetabletennis@gmail.com',
+    password:       'bttc:)1040'
+    # user_name:      'zhaoyi5914@gmail.com',
+    # password:       'woxihuanni!',
     domain:         'localhost:3000',
     address:       'smtp.gmail.com',
     port:          '587',
