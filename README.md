@@ -39,6 +39,14 @@ brew install imagemagick
 ```bash
 sudo apt-get install imagemagick -y
 ```
+3. If you are on Window10, you'll want to do the following:
+* Download the ImageMagick binary install package from one of the ftp sites listed on  the [ImageMagick](https://imagemagick.org/script/download.php) download page. The file will be named similar to ImageMagick-7.0.8-57-Q16-x64-static.exe
+* Test the success, run following command in cmd
+```bash
+convert -version
+```
+
+
 
 
 ### Description
