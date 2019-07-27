@@ -55,6 +55,8 @@ Features: Cipher DPC HDRI OpenCL
 Delegates (built-in): bzlib cairo flif freetype gslib heic jng jp2 jpeg lcms lqr lzma openexr pangocairo png ps raw rsvg tiff webp xml zlib
 ```
 
+(More click [Instruction](https://medium.com/ruby-on-rails-web-application-development/install-rmagick-gem-on-windows-7-8-10-imagemagick-6-9-4-q16-hdri-5492c3fef202))
+
 
 
 ### Description
