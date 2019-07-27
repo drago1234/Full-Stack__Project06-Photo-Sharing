@@ -45,7 +45,15 @@ sudo apt-get install imagemagick -y
 ```bash
 convert -version
 ```
-
+* And you should see some similar 
+```
+Version: ImageMagick 7.0.8-57 Q16 x64 2019-07-27 http://www.imagemagick.org
+Copyright: Copyright (C) 1999-2018 ImageMagick Studio LLC
+License: http://www.imagemagick.org/script/license.php
+Visual C++: 180040629
+Features: Cipher DPC HDRI OpenCL
+Delegates (built-in): bzlib cairo flif freetype gslib heic jng jp2 jpeg lcms lqr lzma openexr pangocairo png ps raw rsvg tiff webp xml zlib
+```
 
 
 
