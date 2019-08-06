@@ -33,6 +33,24 @@ brew install imagemagick
 ```bash
 sudo apt-get install imagemagick -y
 ```
+3. If you are on Window10, you'll want to do the following:
+* Download the ImageMagick binary install package from one of the ftp sites listed on  the [ImageMagick](https://imagemagick.org/script/download.php) download page. The file will be named similar to ImageMagick-7.0.8-57-Q16-x64-static.exe
+* Test the success, run following command in cmd
+```bash
+convert -version
+```
+* And you should see some similar 
+```
+Version: ImageMagick 7.0.8-57 Q16 x64 2019-07-27 http://www.imagemagick.org
+Copyright: Copyright (C) 1999-2018 ImageMagick Studio LLC
+License: http://www.imagemagick.org/script/license.php
+Visual C++: 180040629
+Features: Cipher DPC HDRI OpenCL
+Delegates (built-in): bzlib cairo flif freetype gslib heic jng jp2 jpeg lcms lqr lzma openexr pangocairo png ps raw rsvg tiff webp xml zlib
+```
+
+(More clear [Instruction](https://medium.com/ruby-on-rails-web-application-development/install-rmagick-gem-on-windows-7-8-10-imagemagick-6-9-4-q16-hdri-5492c3fef202))
+
 
 
 ### Description
