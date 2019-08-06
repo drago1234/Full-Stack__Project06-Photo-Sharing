@@ -1,7 +1,5 @@
-<!--write the title on 07/22/2019 by Zhengqi-->
 <% provide(:title, @user.name) %>
 
-<!-- Created by Yi Implemented by Yi  -->
 <% if !user_signed_in? %>
   <div class="center jumbotron">
     <h1><span class = "glyphicon glyphicon-camera" area-hidden="ture"></span> Freelance Canvas</h1>
@@ -26,7 +24,7 @@
                   <% if (current_user.id == @user.id) %>
                     <button  class= "btn btn-success  left-btn",
                       onclick="window.location.href = '<%= edit_user_registration_path%>';">
-                          Edit Profile 
+                          Edit Profile
                     </button>
                   <% end %>
                   <%= render 'follow_form' if user_signed_in? %>
@@ -37,8 +35,8 @@
 
           <p><strong>Email: </strong><%= @user.email %></p>
           <p><strong>Bio: </strong> <%= (@user.bio == "")||(@user.bio == nil) ? "Didn't say anything yet." : @user.bio %> </p>
-            
-        </div>             
+
+        </div>
         <div class="col-xs-12 col-sm-4 ">
           <%= image_tag @user.avatar.url(:small), :class => "thumbnail"%>
         </div>
@@ -47,28 +45,28 @@
       <div class="col-xs-12 divider text-center">
           <div class="col-xs-12 col-sm-4 emphasis">
             <a href="<%= followers_user_path(@user) %>">
-              <h2><strong id="followers"><%= @user.followers.count %></strong></h2>                    
+              <h2><strong id="followers"><%= @user.followers.count %></strong></h2>
               <p><small>Followers</small></p>
-            </a> 
+            </a>
           </div>
           <div class="col-xs-12 col-sm-4 emphasis">
             <a href="<%= following_user_path(@user) %>">
-              <h2><strong><%= @user.following.count %></strong></h2>                    
+              <h2><strong><%= @user.following.count %></strong></h2>
               <p><small>Following</small></p>
             </a>
           </div>
           <div class="col-xs-12 col-sm-4 emphasis">
             <a href="<%= posts_path %>">
-              <h2><strong><%= @user.posts.count %></strong></h2>                    
+              <h2><strong><%= @user.posts.count %></strong></h2>
               <p><small>Posts</small></p>
             </a>
           </div>
       </div>
-    </div>                 
+    </div>
   </div>
 
   <div class = "row">
-    <% @user.posts.each do |post| %> 
+    <% @user.posts.each do |post| %>
       <div class="col-md-4 col-sm-6">
           <div class="hovereffect">
             <%= image_tag post.image.url(:medium), class: "img-responsive" %>

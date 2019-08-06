@@ -1,7 +1,4 @@
 class LikesController < ApplicationController
-
-  # Created & implemented by Yi
-  
   before_action :authenticate_user!
 
   def create
@@ -23,5 +20,4 @@ class LikesController < ApplicationController
       format.js
     end
   end
-
 end

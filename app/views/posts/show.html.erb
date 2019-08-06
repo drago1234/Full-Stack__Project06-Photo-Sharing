@@ -1,8 +1,5 @@
-<!--write title on 07/22/2019 by Zhengqi-->
 <% provide(:title, 'Show Post') %>
 
-<!-- Created by Yi Implemented by Yi  -->
-<div class="col-md-12">
 <div class="thumbnail">
 <%= image_tag @post.image.url(:large) , id: "main-image"%>
 </div></div>
@@ -31,21 +28,21 @@
       </p>
 </div>
 
-  
+
 <div class = "col-md-1">
     <%= render 'like_form' if user_signed_in? %>
   </div>
 
   <div class = "col-md-1">
       <% if current_user.id == @post.user_id %>
-        <%= link_to 'Edit', edit_post_path(@post) , class:'btn btn-success' , id:"btn-light"%> 
-      <% end %> 
+        <%= link_to 'Edit', edit_post_path(@post) , class:'btn btn-success' , id:"btn-light"%>
+      <% end %>
   </div>
   <div class = "col-md-1">
     <%= link_to "More", user_path(User.find(@post.user_id)), class:"btn btn-primary" , id:"btn-light" %>
   </div>
-     
-  
+
+
 
 </div>
 

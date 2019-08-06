@@ -1,8 +1,5 @@
-<!--# write title on 07/22/2019 by Zhengqi-->
 <% provide(:title, "Edit profile") %>
 
-<!-- Created by Yi Implemented by Yi  -->
-<h1>Edit <%= resource_name.to_s.humanize %></h1>
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
@@ -40,7 +37,7 @@
     <%= f.password_field :current_password, autocomplete: "current-password", class: 'form-control' %>
 
     <%= f.submit "Update", class: "btn btn-primary" %>
-  
+
     <% end %>
     </div>
   </div>
@@ -52,4 +49,3 @@
 <p> <%= button_to "Delete my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete , class: "btn btn-warning"%></p>
   </div>
 </div>
-

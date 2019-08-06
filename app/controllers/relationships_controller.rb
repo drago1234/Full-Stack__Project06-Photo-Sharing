@@ -1,7 +1,4 @@
 class RelationshipsController < ApplicationController
-
-  # Created & implemented by Yi
-  
   before_action :authenticate_user!
 
   def create

@@ -4,7 +4,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '>=2.5.0'
 gem 'rails', '~> 5.2.3'
 
-
 gem 'bootstrap-will_paginate', '1.0.0'
 gem "bootstrap-sass", ">= 3.4.1"
 gem "paperclip", "~> 6.0.0"

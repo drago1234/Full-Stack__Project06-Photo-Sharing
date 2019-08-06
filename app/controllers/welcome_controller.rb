@@ -1,4 +1,3 @@
-# write on 07/15/2019 by Zhengqi
 class WelcomeController < ApplicationController
   def index
   end
@@ -8,10 +7,10 @@ class WelcomeController < ApplicationController
 
   def help
   end
-  
+
   def about
   end
-  
+
   def contact
   end
 end

@@ -1,10 +1,5 @@
 class CommentsController < ApplicationController
-
-  # Created and implemented by Pranay
-
   before_action :set_comment, only: [:show, :edit, :update, :destroy]
-
-
 
   def index
     @comments = Comment.all
@@ -29,9 +24,7 @@ class CommentsController < ApplicationController
     else
       render 'new'
     end
-
   end
-
 
   def update
     respond_to do |format|
@@ -49,7 +42,6 @@ class CommentsController < ApplicationController
     @comments = Post.find(params[:post_id]).comments
     @comments.find(params[:id]).destroy
     redirect_to "/posts/#{params[:post_id]}"
-   
   end
 
   private

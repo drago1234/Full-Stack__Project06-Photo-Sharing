@@ -18,7 +18,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     user_name:      'buckeyetabletennis@gmail.com',
-    password:       'bttc:)1040'
+    password:       'bttc:)1040',
     # user_name:      'zhaoyi5914@gmail.com',
     # password:       'woxihuanni!',
     domain:         'localhost:3000',

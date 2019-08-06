@@ -1,4 +1,3 @@
-# Created & implemented by Yi
 class UsersController < ApplicationController
 
   def show
@@ -15,6 +14,5 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @followers = @user.followers
   end
-
 
 end

@@ -1,8 +1,5 @@
-<!--write on 07/22/2019 by Zhengqi-->
 <% provide(:title, 'Post') %>
 
-<!-- Created by Yi Implemented by Yi  -->
-<div class = "center jumbotron">
   <h1>Gallery of Your Masterpieces</h1>
   <h2>M A S T E R P I E C E S</h2>
   <%= link_to 'New Post', new_post_path , class: "btn btn-lg btn-success" ,id:"light"%>
@@ -10,7 +7,7 @@
 
 
 <div class = "row">
-  <% @posts.each do |post| %> 
+  <% @posts.each do |post| %>
     <div class="col-md-4 col-sm-6">
         <div class="hovereffect">
           <%= image_tag post.image.url(:medium), class: "img-responsive" %>
@@ -23,11 +20,3 @@
     </div>
   <% end %>
 </div>
-
-
-
-
-
-
-
-
