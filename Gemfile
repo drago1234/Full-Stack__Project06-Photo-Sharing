@@ -7,6 +7,7 @@ gem 'rails', '~> 5.2.3'
 gem 'bootstrap-will_paginate', '1.0.0'
 gem "bootstrap-sass", ">= 3.4.1"
 gem "paperclip", "~> 6.0.0"
+gem 'mimemagic', git: 'https://github.com/mimemagicrb/mimemagic', ref: '01f92d86d15d85cfd0f20dabd025dcbd36a8a60f' # More issues refers to https://stackoverflow.com/questions/67024762/can-no-longer-bundle-install-all-of-my-applications-on-rails-that-require-paperc
 gem 'devise'
 gem 'sqlite3'
 gem 'puma', '~> 3.11'
@@ -28,7 +29,6 @@ end
 
 group :development do
   gem 'web-console', '>= 3.3.0'
-  gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end

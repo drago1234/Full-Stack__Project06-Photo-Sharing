@@ -36,8 +36,8 @@ brew install imagemagick
 sudo apt-get install imagemagick -y
 ```
 3. If you are on Window10, you'll want to do the following:
-* Download the ImageMagick binary install package from one of the ftp sites listed on  the [ImageMagick](https://imagemagick.org/script/download.php) download page. The file will be named similar to ImageMagick-7.0.8-57-Q16-x64-static.exe
-* Test the success, run following command in cmd
+* Download the ImageMagick binary install package from one of the ftp sites listed on  the [ImageMagick](https://imagemagick.org/script/download.php) download page. The file will be named similar to ImageMagick-6.9.12-13-Q16-HDRI-x64-dll.exe
+* Test the success of installation, run following command in cmd
 ```bash
 convert -version
 ```
@@ -50,6 +50,11 @@ Visual C++: 180040629
 Features: Cipher DPC HDRI OpenCL
 Delegates (built-in): bzlib cairo flif freetype gslib heic jng jp2 jpeg lcms lqr lzma openexr pangocairo png ps raw rsvg tiff webp xml zlib
 ```
+* Then, you need to find its lib path and include folder path, and run the command similar as follow before running ```bundle update```:
+```bash
+gem install mimemagic --platform=ruby -- --with-opt-lib="C:\Program Files\ImageMagick-6.9.12-Q16-HDRI\lib" --with-opt-include="C:\Program Files\ImageMagick-6.9.12-Q16-HDRI\include"
+```
+
 
 (More clear [Instruction](https://medium.com/ruby-on-rails-web-application-development/install-rmagick-gem-on-windows-7-8-10-imagemagick-6-9-4-q16-hdri-5492c3fef202))
 
