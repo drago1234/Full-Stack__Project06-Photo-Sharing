@@ -8,9 +8,9 @@ gem 'bootstrap-will_paginate', '1.0.0'
 gem "bootstrap-sass", ">= 3.4.1"
 gem "paperclip", "~> 6.0.0"
 gem 'mimemagic', git: 'https://github.com/mimemagicrb/mimemagic', ref: '01f92d86d15d85cfd0f20dabd025dcbd36a8a60f' # More issues refers to https://stackoverflow.com/questions/67024762/can-no-longer-bundle-install-all-of-my-applications-on-rails-that-require-paperc
-gem 'devise'
-# gem 'sqlite3' # SQLite won't allow you to deploy on Heroku, for more details see https://devcenter.heroku.com/articles/sqlite3
-gem 'pg'
+gem 'devise'  
+gem 'sqlite3' # SQLite won't allow you to deploy on Heroku, for more details see https://devcenter.heroku.com/articles/sqlite3
+# gem 'pg'  # Refers to this doc for how to migrate database from sql to postgres
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'

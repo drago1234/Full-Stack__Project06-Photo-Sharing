@@ -13,7 +13,7 @@ class User < ApplicationRecord
                     uniqueness: { case_sensitive: false }
   validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
 
-  
+
   has_many :passive_relationships, class_name: "Relationship",
   foreign_key: "followed_id",
   dependent: :destroy

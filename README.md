@@ -1,10 +1,15 @@
 # Project name: Freelance Canvas Web Application
 
-![home](./hoem_page.jpg)
+Home Page
+![home](./home_page.jpg)
 
+Sign up Page:
+![sign_up](./sign_up_page.jpg)
 ### Description
 
 The orginial idea was derived from the 500 px website, a photo sharing website for professional photographers. Our webiste extend the original feature and allow the users to present their work to the internet. The way to use this website is pretty easy. As a public user, you can visite all the work that had posted by the current users. However, in order to interact with the authoer (such as leave a comment, like..), you must register an account to be a valid user. To register an account, you need to click the login button in the top right corner and fill out all required information. After the registration, you have the right to post your work and see all you followers and who you are following as well. In the Post page, you can see all the posts that you had published. In the Profile page, you can modify you information and update them. To create a new page, you need to go to page file and click "New Post", then you can create a new post.
+
+
 
 ### How to get start?
 #### Environment setup
