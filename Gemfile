@@ -12,7 +12,7 @@ gem 'devise'
 gem 'sqlite3' # SQLite won't allow you to deploy on Heroku, for more details see https://devcenter.heroku.com/articles/sqlite3
 # gem 'pg'  # Refers to this doc for how to migrate database from sql to postgres
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 4.3'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
